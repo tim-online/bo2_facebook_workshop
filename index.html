@@ -1,394 +1,718 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+        <title>Bo&sup2; Facebook Workshop</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+        <meta name="description" content="Facebook Workshop voor Bo&sup2;">
+        <meta name="author" content="Lieneke de Wolf">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/default.css" id="theme">
+        <link rel="stylesheet" href="plugin/emojify/emojify.min.css">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+        <style type="text/css">
+            .emoji {
+                width: 1em;
+                height: 1em;
+                display: inline-block;
+                margin-bottom: -0.25em !important;
+            }
 
-		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-		<script>
-			if( window.location.search.match( /print-pdf/gi ) ) {
-				var link = document.createElement( 'link' );
-				link.rel = 'stylesheet';
-				link.type = 'text/css';
-				link.href = 'css/print/pdf.css';
-				document.getElementsByTagName( 'head' )[0].appendChild( link );
-			}
-		</script>
+            h4 .emoji {
+                width: 1.7em;
+                height: 1.7em;
+            }
+        </style>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
 
-	<body>
+        <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+        <script>
+            if( window.location.search.match( /print-pdf/gi ) ) {
+                var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+        </script>
 
-		<div class="reveal">
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
+    <body>
 
-				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
+        <div class="reveal">
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section data-background="media/horeca_bg.jpg">
+                    <h1>Horeca – Business Opportunities</h1>
+                    <h3>Online!</h3>
+                    <p>
+                        <small><a href="mailto:lieneke@tim-online.nl">Lieneke de Wolf</a> / <a href="http://www.tim-online.nl">Tim_online</a></small>
+                    </p>
+                </section>
 
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
+                <section>
+                    <h2>Wie is Tim_online / wie zijn wij?</h2>
+                    <ul>
+                        <li>Kees Zorge</li>
+                        <li>Lieneke de Wolf</li>
+                    </ul>
+                </section>
 
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
-				</section>
+                <section>
+                    <h2>Wat doen wij voor Bo<span style="font-family: lato;">&sup2;</span>?</h2>
+                    <ul>
+                        <li>Sponsor van Bo&sup2; en online partner</li>
+                        <li>Nulmetingen uitvoeren en bedrijven adviseren</li>
+                        <li>Bo&sup2; online future proof maken</li>
+                    </ul>
+                </section>
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
+                <section>
+                    <h2>Programma</h2>
+                    <ul>
+                        <li>Belang en Kracht van online</li>
+                        <li>Zoekmachineoptimalisatie</li>
+                        <li>Review sites</li>
+                        <li>Social media: welk kanaal opnemen in de marketingmix?</li>
+                        <li>Facebook: hoe haal je het maximale eruit</li>
+                        <li>Nulmetingen</li>
+                    </ul>
+                </section>
 
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
+                <section>
+                    <h2>Wat er niet in het programma past :smile:</h2>
+                    <ul>
+                        <li>Email marketing</li>
+                        <li>Belang van bloggen</li>
+                        <li>Mogelijkheden online marketing</li>
+                        <li>Google Analytics</li>
+                        <li>Enz... </li>
+                    </ul>
+                </section>
 
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
+                <section>
+                    <video class="stretch" data-autoplay src="media/socialnomics.mp4"></video>
+                </section>
 
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
+                <section>
+                    <h2>Nederland = Internet</h2>
+                    <ul>
+                        <li>NL koploper qua gebruik van tablet per huishouden</li>
+                        <li>Wereldwijd in top 5 van aantal smartphone gebruikers per inwoner</li>
+                        <li>96% van huishoudens heeft vorm van internet</li>
+                        <li>Gemiddeld 3 apparaten om mee online te gaan</li>
+                        <li>In reis- en hospitalitybranche: 1 op de 3 zoekopdrachten komt van mobiel apparaat </li>
+                    </ul>
+                </section>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
+                <section>
+                    <section>
+                        <h2>Horeca: belang van online</h2>
+                    </section>
 
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
+                    <section>
+                        <h3>Wie zoekt online?</h3>
+                        <ul>
+                            <li>Eerste keer op zoek naar restaurant: 43% zoekt info online (5% on- en offline, 52% offline)</li>
+                            <li>Meer geld uitgeven = meer online informatie zoeken</li>
+                        </ul>
+                    </section>
 
-						```
-						<section data-markdown>
-						  ## Markdown support
+                    <section>
+                    <h3>Hoe wordt online gezocht?</h3>
+                    <ul>
+                        <li>Via zoekmachines (Google, Yahoo, Bing)</li>
+                        <li>Eigen websites van restaurantbedrijven</li>
+                        <li>Restaurantverzamelwebsites --. Iens.nl en eet.nu</li>
+                    </ul>
+                    </section>
 
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
+                    <section>
+                        <h3>Bestede tijd</h3>
+                        <ul>
+                            <li>Gemiddeld 30 minuten om restaurant te zoeken</li>
+                            <li>25 min op resto websites</li>
+                            <li>5 min op overkoepelende restaurantwebsites</li>
+                        </ul>
+                    </section>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
+                    <section>
+                        <h2>Kortom; een goede website is van levensbelang!</h2>
+                    </section>
+                </section>
 
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?#/themes">Default</a> -
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> <br>
-						<a href="?theme=moon#/themes">Moon</a> -
-						<a href="?theme=solarized#/themes">Solarized</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
+                <section>
+                    <h2>Zo is jouw bedrijf future ready online!</h2>
+                    <ul>
+                        <li>Website is het visitekaartje van jouw bedrijf</li>
+                        <li>Website is responsive! Op alle apparaten gebruiksvriendelijk en schaalt mee; mobile friendly </li>
+                        <li>Jouw website is voorzien van actueel nieuws</li>
+                        <li>Optimalisatie van lokale vindbaarheid in zoekresultaten en GoogleMaps</li>
+                        <li>Claim bedrijvenpagina van Google+ (info, foto’s, StreetView)</li>
+                        <li>Zorg voor goede vermeldingen op reviewsites</li>
+                        <li>Kies de juiste social media platformen en zorg voor social interest</li>
+                    </ul>
+                </section>
 
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
-					</p>
-				</section>
+                <section>
+                    <section>
+                        <h2>Zoekoptimalisatie (SEO)</h2>
+                        <ul>
+                            <li>Wat is SEO?</li>
+                            <li>Waarom is het belangrijk?</li>
+                            <li>Hoe zet je het in? (belangrijk onderdeel: Social Media)</li>
+                        </ul>
+                    </section>
 
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
+                    <section>
+                        <blockquote>
+                            Zoekmachineoptimalisatie (Engels: search engine optimization of SEO[1]) is een onderdeel van zoekmachinemarketing en kan worden gedefinieerd als het geheel aan activiteiten bedoeld om een webpagina hoog te laten scoren in de organische zoekresultaten van een zoekmachine, op de voor die webpagina relevante trefwoorden, trefwoordcombinatie(s) casu quo zoekterm(en). Aangezien een vermelding in die organische resultaten gratis is, vormen deze zoekresultaten een interessant alternatief voor zoekmachineadverteren.
+                        </blockquote>
+                    </section>
 
-				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-				</section>
+                    <section>
+                        <h2>Dus wat is SEO?</h2>
+                        <ul>
+                            <li>Proces om site beter zichtbaar te maken in zoekresultaten van zoekmachines</li>
+                            <li>Doel: meer bezoekers en klanten naar je site</li>
+                            <li>Gewenste resultaat = conversie </li>
+                        </ul>
+                    </section>
 
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
-					<p>
-						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-					</p>
-				</section>
+                    <section>
+                        <h2>Zoekoptimalisatie (SEO)</h2>
+                        <ul>
+                            <li>Bepaal de juiste trefwoorden/keywords</li>
+                            <li>Maak  SEO vriendelijke teksten, urls, titels</li>
+                            <li>Technische optimalisatie website (structuur / inhoud / indeling / inhoud / opmaak)</li>
+                            <li>Maar ook;</li>
+                            <ul>
+                                <li>Snelheid</li>
+                                <li>Responsive</li>
+                                <li>Versheid</li>
+                            </ul>
+                            <li>Links bouwen / website promotie</li>
+                            <li>Inzet social media</li>
+                            <li>meten = weten -> verbeteren</li>
+                        </ul>
+                    </section>
+                </section>
 
-				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-					<h2>Background Transition Override</h2>
-					<p>
-						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-					</p>
-				</section>
+                <section>
+                    <section>
+                        <h2>Review Sites</h2>
+                        <h3>ca. 20 in Nederland</h3>
+                        <div class="imagegrid">
+                            <img src="media/couverts_logo.jpg" />
+                            <img src="media/alletoprestaurants_logo.jpg" />
+                            <img src="media/dinnersite_logo.jpg" />
+                            <img src="media/eetnu_logo.jpg" />
+                            <img src="media/iens_logo.jpg" />
+                        </div>
+                    </section>
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
+                    <section>
+                        <h2>Kracht van reviews</h2>
+                        <ul>
+                            <li>Sociaal advies werkt</li>
+                            <li>Consumentenmening telt (80% laat meewegen; objectieve informatie)</li>
+                            <li>Multi-inzetbaar</li>
+                            <li>Stimuleren van plaatsing (korting, kadootje)</li>
+                            <li>Reviews zijn goed voor SEO (‘sterren’ rich snippets op Google)</li>
+                        </ul>
+                    </section>
 
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
+                    <section
+                        data-background="media/zoek_pays_de_mer_terneuzen.jpg"
+                        data-background-position="top">
+                    </section>
 
-    var nodes = document.querySelectorAll( selector );
+                    <section
+                        data-background="media/zoek_de_vijverhoeve_sluis.jpg"
+                        data-background-position="top">
+                    </section>
 
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
+                    <section
+                        data-background="media/zoek_sydney_eat_and_great.jpg"
+                        data-background-position="top">
+                    </section>
+                </section>
 
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
+                <section data-background="media/social_media_bg.jpg">
+                    <h2>Social Media</h2>
+                    <h3>Welk platform? En welke invloed voor horeca?</h3>
+                    <ul>
+                        <li>LinkedIn: 1%</li>
+                        <li>Twitter: 4%</li>
+                        <li>Facebook: 34%</li>
+                    </ul>
+                    <!--
+                    <div class="imagegrid">
+                        <img src="media/facebook_logo.jpg">
+                        <img src="media/twitter_logo.jpg">
+                        <img src="media/linkedin_logo.jpg">
+                        <img src="media/pinterest_logo.jpg">
+                        <img src="media/instagram_logo.jpg">
+                        <img src="media/googleplus_logo.jpg">
+                        <img src="media/youtube_logo.png">
+                        <img src="media/foursquare_logo.jpg">
+                    </div>
+                    -->
+                </section>
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
+                <section
+                    data-background="media/world-map-of-social-media-networks-dec-2013.png"
+                    data-background-size="contain"
+                    data-background-color="white">
+                </section>
 
-				<section>
-					<section id="fragments">
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
+                <section>
+                    <section>
+                        <h2>Facebook wereldwijd</h2>
+                        <ul>
+                            <li>Opgericht in 2004 als sociaal netwerk voor studenten door Mark Zuckerberg</li>
+                            <li>1,23 miljard maandelijks actieve  gebruikers wereldwijd</li>
+                            <li>757 miljoen dagelijks actief</li>
+                            <li>Gemiddeld 8,3 uur per maand op Facebook </li>
+                            <li>945 miljoen van 1,23 miljard (ook) mobiel gebruik van Facebook</li>
+                        </ul>
+                    </section>
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-current-blue">highlight-current-blue</p>
-					</section>
-				</section>
+                    <section>
+                        <h2>Facebook Nederland</h2>
+                        <ul>
+                            <li>9 miljoen geregistreerde Facebook-accounts</li>
+                            <li>Facebook gebruik om Q4/2013: 9,7 tot 9,8 miljoen Nederlandse bezoekers.</li>
+                        </ul>
+                    </section>
+                </section>
 
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
-				</section>
+                <section>
+                    <h2>Inzet van Facebook; waarom?</h2>
+                    <ul>
+                        <li>Doelgroep bereiken en activeren</li>
+                        <li>Naamsbekendheid</li>
+                        <li>Klanten vinden en binden</li>
+                        <li>Imago versterken</li>
+                        <li>Van klanten ‘fans’ maken en virale verspreiding optimaliseren</li>
+                        <li>Delen van kennis en informative</li>
+                        <li>Online discussie over bedrijf bevorderen</li>
+                        <li>Hoe? Bedrijfsactiviteiten beschrijven, communicatie met fans</li>
+                    </ul>
+                </section>
 
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section>
+                <section>
+                    <h2>Facebook pagina’s van deelnemers</h2>
+                    <ul>
+                        <li>Alle 9 genomineerden hebben een Facebookpagina</li>
+                        <li>Tussen 180 –> 3000 likers</li>
+                        <li>Kwaliteit van fans is  groot!</li>
+                        <li>Recencies bijna overal gebruikt en ingevuld</li>
+                        <li>Informatie wisselend ingevuld</li>
+                        <li>Activiteit verschilt behoorlijk</li>
+                        <li>Weinig gebruik van actie</li>
+                    </ul>
+                </section>
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
-				</section>
+                <section>
+                    <section>
+                        <h2>Hoe haal je het maximale uit Facebook?</h2>
+                        <h3>Tien tips!</h3>
+                    </section>
 
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
+                    <section>
+                        <h2>Overwegingen</h2>
+                        <ul>
+                            <li>Stap voor stap</li>
+                            <li>Plan Do Check Act</li>
+                            <li>Geen gouden regels, wel tips en adviezen</li>
+                        </ul>
+                    </section>
 
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
-				</section>
+                    <section>
+                        <h2>Tip 1: Op onderzoek - Kijk en Leer</h2>
+                        <ul>
+                            <li>Zoek pagina’s van concurrenten en aanverwante bedrijven</li>
+                            <li>Zoek op naam / trefwoord (geen 100% garantie dat je alles vindt) of check de website van je concurrent op FB  aanwezigheid</li>
+                            <li>Wat is de inhoud van de posts? Waar wordt het meest op  gereageerd? Foto’s / links / video’s / vragen?</li>
+                            <li>Hoeveel mensen plaatsen een bericht op de pagina? Hoeveel reageren?  (zie aantal likers /waren hier/ praten hierover’)</li>
+                            <li>Heeft een pagina speciale tabs?</li>
+                            <li>Kijk ook welke berichten niet werken... en doe het beter</li>
+                        </ul>
+                    </section>
 
-			</div>
+                    <section>
+                        <h2>Voorbeelden</h2>
+                        <ul>
+                            <li><a href="https://www.facebook.com/Bavaria?fref=ts" target="_blank">Bavaria</a></li>
+                            <li><a href="https://www.facebook.com/defirmanijmegen" target="_blank">De Firma Nijmegen</a></li>
+                            <li><a href="https://www.facebook.com/thejaneantwerp" target="_blank">The Jane Antwerp</a></li>
+                            <li><a href="https://www.facebook.com/rabobank" target="_blank">Rabobank</a></li>
+                            <li><a href="https://www.facebook.com/BilderDeClercq" target="_blank">Bilder & De Clercq</a></li>
+                        </ul>
+                    </section>
 
-		</div>
+                    <section>
+                        <h2>Tip 3: Optimaliseer je pagina</h2>
+                        <ul>
+                            <li>Omslagfoto</li>
+                            <ul>
+                                <li>Varieer regelmatig</li>
+                                <li>Zorg voor call to action en informatie daarbij</li>
+                                <li>Aansprekende beelden</li>
+                                <li>Laat klanten zien die het product gebruiken</li>
+                            </ul>
+                            <li>Profielfoto</li>
+                        </ul>
+                    </section>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+                    <section
+                        data-background="media/omslagfoto_timonline.jpg"
+                        data-background-position="top">
+                    </section>
 
-		<script>
+                    <section
+                        data-background="media/omslagfoto_nobus.jpg"
+                        data-background-position="top">
+                    </section>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+                    <section>
+                        <ul>
+                            <li>Zorg voor goede omschrijving op informatiepagina; openingstijden, contactgegevens, parkeermogelijkheden, type restaurant</li>
+                            <li>Maak goede url aan</li>
+                            <li>Vermeld mijlpalen (opening, nieuw pand, verbouwing, gewonnen prijs)</li>
+                            <li>Maak gebruik van tabs</li>
+                            <li>Maak gebruik van de Menu optie, NIEUW!!</li>
+                        </ul>
+                    </section>
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+                    <section>
+                        <h2>Tip 2: Wat werkt?</h2>
+                        <ul>
+                            <li>Deel relevante informatie (80-20%)</li>
+                            <ul>
+                                <li>Belangrijk nieuws, persberichten</li>
+                                <li>Evenement in de wijk / stad </li>
+                                <li>Informatie leveranciers</li>
+                                <li>Contentcuratie; sluit aan bij beleving doelgroep</li>
+                            </ul>
+                            <li>Be good & let them tell it</li>
+                        </ul>
+                    </section>
 
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
+                    <section
+                        data-background="media/fb_voorbeeld_1.jpg"
+                        data-background-position="top">
+                    </section>
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+                    <section
+                        data-background="media/fb_voorbeeld_2.jpg"
+                        data-background-position="top">
+                    </section>
 
-		</script>
+                    <section>
+                        <h2>Brandinvites.nl</h2>
+                        <img src="media/fb_voorbeeld_3.jpg" style="box-sizing: border-box; float: right; width: 50%;"/>
+                        <ul style="box-sizing: border-box; float: left; width: 45%;">
+                            <li>3800 fans</li>
+                            <li>150.000 likes</li>
+                            <li>10.000 keer gedeeld</li>
+                        </ul>
+                    </section>
 
-	</body>
+                    <section>
+                        <h2>Wat werkt?</h2>
+                        <ul>
+                            <li>Laat zien wat je in huis hebt</li>
+                            <ul>
+                                <li>Foto’s van gerechten (seizoensmenu, best verkochte gerechten)</li>
+                                <li>Foto’s van interieur, tuin, terras, sfeer</li>
+                                <li>Must: goede kwaliteit en omschrijving!</li>
+                                <li>Video</li>
+                                <li>Geen overkill</li>
+                            </ul>
+                            <li>Geef een kijkje in de keuken</li>
+                            <ul>
+                                <li>Achter de schermen</li>
+                                <li>Info over voorraad, inkoop, ingredienten </li>
+                                <li>Leveranciers over de vloer</li>
+                                <li>Foto? Video!</li>
+                            </ul>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <video data-autoplay class="stretch" src="media/fb_video_voorbeeld.mp4"></video>
+                    </section>
+
+                    <section
+                        data-background="media/fb_voorbeeld_4.jpg"
+                        data-background-position="top">
+                    </section>
+
+                    <section>
+                        <h2>Wat werkt?</h2>
+                        <ul>
+                            <li>Maak het persoonlijk en wees authentiek</li>
+                            <ul>
+                                <li>Wie werken er? Wie is de eigenaar?</li>
+                                <li>Wat is zijn verhaal?</li>
+                                <li>Personeel uitlichten</li>
+                                <li>Nieuwe collega’s  voorstellen</li>
+                                <li>Afscheid, bedanken</li>
+                                <li>Geleverde prestaties</li>
+                                <li>Nieuw personeel</li>
+                            </ul>
+                            <li>Ambassadeursfunctie – viraal bereik groot door vrienden van personeel</li>
+                            <li>Let op je ‘tone of voice’!</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Voorbeelden</h2>
+                        <ul>
+                            <li><a href="https://www.facebook.com/NobusAdvocaten/photos/a.522307551168279.1073741828.513497928715908/686839834715049/?type=1&theater">Nobus Advocaten</a></li>
+                            <li><a href="https://www.facebook.com/pages/Petrus-Paulus-hoeve/383084628386429?fref=ts">Petrus &amp; Paulus Hoeve</a></li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Wat werkt? Interactie!</h2>
+                        <ul>
+                            <li>Reageer op vragen</li>
+                            <li>Vraag feedback, stel vragen</li>
+                            <li>Bedank voor de feedback</li>
+                            <li>Pas op voor discussie</li>
+                            <li>Zorg voor fun en entertainment</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Voorbeeld</h2>
+                        <ul>
+                            <li><a href="https://www.facebook.com/RechtdoorZee/photos/a.320523251348156.79097.262677897132692/711513275582483/?type=1&theater">Recht door Zee</a></li>
+                        </ul>
+                    </section>
+
+                    <section
+                        data-background="media/wagamama.jpg"
+                        data-background-position="top">
+                    </section>
+
+                    <section>
+                        <h2>Tip 5: Maak een Content Kalender</h2>
+                        <ul>
+                            <li>Wat moet ik plaatsen? En wanneer?</li>
+                            <li>Soorten kalenders</li>
+                            <ol>
+                                <li>Lange termijn kalender: events, promoties, bijzondere gelegenheden door het jaar, feestdagen</li>
+                                <li>Week kalender</li>
+                                <ul>
+                                    <li>maandag; link naar een interessant artikel / wetenswaardigheid</li>
+                                    <li>dinsdag: foto, genomen in de zaak</li>
+                                    <li>woensdag; vraag van de dag (menu keuze, ingredienten...</li>
+                                    <li>donderdag: fan van de week</li>
+                                    <li>vrijdag: reclame voor aanbieding</li>
+                                </ul>
+                            </ol>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Feiten & Cijfers</h2>
+                        <ul>
+                            <li>51% van de consumenten zegt eerder een product te kopen als ze het geliked hebben op Facebook</li>
+                            <li>56% van de consumenten zal ws een merk aanbevelen bij een vriend na het liken van de pagina</li>
+                            <li>78% van de consumenten liken minder dan 10 merken</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Tip 3: doorgrond de EdgeRank</h2>
+                        <ul>
+                            <li>Formule bepaalt hoeveel mensen je bericht te zien krijgen</li>
+                            <li>Like, delen, reactie, tags, frequentie… telt allemaal mee om ‘gewicht’ te bepalen</li>
+                            <li>Hoe hoger het gewicht, hoe meer kans  op nieuwsoverzicht</li>
+                            <li>Affiniteit: zorg dat je berichten bekeken, geliked, gedeeld worden</li>
+                            <li>Gewicht (waarde): niet alles heeft zelfde gewicht</li>
+                            <li>Actualiteit (tijd): hoe vaak en wanneer</li>
+                        </ul>
+                        <img src="media/affinity.jpg" />
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Tip 4: Publiek aanbouwen</h2>
+                        <ul>
+                            <li>Promoot  je FB pagina. Waar?</li>
+                            <li>menukaart, flyers, viltjes, narrowcasting</li>
+                            <li>Nieuwsbrief</li>
+                            <li>email handtekening</li>
+                            <li>visitekaartjes</li>
+                            <li>nieuwsbrief</li>
+                            <li>website (like butten / FB knop)</li>
+                            <li>overige marketingkanalen (advertenties, brochure, uithangbord)</li>
+                            <li>mond-op-mond reclame</li>
+                            <li>nodig je vrienden / klantenbestand uit, via ‘publiek opbouwen’</li>
+                            <li>email contactpersonen (hotmail/outlook/gmail enz)</li>
+                            <li>deel je bedrijfspagina op je persoonlijke FB account</li>
+                            <li>advertentie maken: betalen voor het promoten van je pagina</li>
+                            <li>volg bedrijfspagina’s van bedrijven; zelf in de picture + inspiratie</li>
+                            <li>beloon je fans; met bijv korting</li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Tip 5: Acties en campagnes</h2>
+                        <ul>
+                            <li>Speciale regels voor acties: Promotion Guidelines</li>
+                            <li>Gebruik van Facebook App</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Voordelen Facebook App</h2>
+                        <ul>
+                            <li>Campagne in eigen huisstijl</li>
+                            <li>Meetbaar (Google Analytics)</li>
+                            <li>Gebruikers info en toestemmingen</li>
+                            <li>Open Graph functies: gebruikersacties doorvertaald naar Nieuwsoverzicht, Ticker, Tijdlijn</li>
+                            <li>Social Channels functies</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Promoties op Facebook (standaard apps)</h2>
+                        <ol>
+                            <li>Verloting van een prijs (Sweepstake) met/zonder referral bonus</li>
+                            <li>Groepsdeals, coupons of kortingscodes – tip! Facebook aanbieding</li>
+                            <li>User-generated foto-, video- of essaywedstrijd</li>
+                            <li>Quizzen, polls en stemmen op foto’s</li>
+                            <li>Fan Only kado’s</li>
+                        </ol>
+                    </section>
+
+                    <section>
+                        <h2>Voorbeelden</h2>
+                        <ul>
+                            <li><a href="https://www.facebook.com/Rehamvastgoed/app_448952861833126">Reham Ibiza</a></li>
+                            <li><a href="https://www.facebook.com/worldofdrinkszierikzee/photos/a.357303604351669.84903.331421463606550/675295709219122/?type=1&theater">World of Drinks Zierikzee</a></li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Tip 6: Adverteren</h2>
+                        <ul>
+                            <li>Betaald adverteren (cpc / dagelijks budget)</li>
+                            <ul>
+                                <li>Interesses</li>
+                                <li>Demografische kenmerken</li>
+                                <li>Aansprekende tekst</li>
+                                <li>Image!</li>
+                            </ul>
+                            <li>Gepromote berichten</li>
+                            <ul>
+                                <li>berichten nogmaals gepost (incl. pagina/locatie/app)</li>
+                                <li>verspreiding binnen / buiten eigen likers bestand</li>
+                                <li>kosten iets lager dan adverteren</li>
+                            </ul>
+                        </ul>
+                    </section>
+                </section>
+
+                <section>
+                    <section data-background="media/stats_bg.jpg">
+                        <h2>Tip 7: Meten is weten: statistieken</h2>
+                        <ul>
+                            <li>Starten met Facebook Insights</li>
+                            <li>Let op: Facebook Insights is vernieuwd</li>
+                            <li>Evt integratie met Google Analytics</li>
+                            <li>Diverse tools om statistieken te meten</li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section>
+                    <h2>Nulmeting</h2>
+                    <ul>
+                        <li>Hoe scoort je website</li>
+                        <li>Wat is je online presence</li>
+                        <li>Hoe presteert je Facebook pagina</li>
+                        <li>Per genomineerde een rapportage / advies</li>
+                        <li>Persoonlijke toelichting volgende week, ca half uur werk (mail naar lieneke@tim-online.nl)</li>
+                        <li>Eind september nogmaals een meting</li>
+                        <li>Wordt meegenomen in de totale beoordeling (stemmen, ...)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Bedankt voor uw aandacht en... Veel Succes!</h2>
+
+                    <h4 style="text-transform: none;">En… like ons en vertel wat je van de workshop vond :smile:</h4>
+                    <h4 style="text-transform: none;"><a href="https://www.facebook.com/timonlinebv">https://www.facebook.com/timonlinebv</a></h4>
+                </section>
+
+            </div>
+
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+                slideNumber: true,
+
+                theme: Reveal.getQueryHash().theme || 'moon', // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Parallax scrolling
+                // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+                // parallaxBackgroundSize: '2100px 900px',
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    // { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    // { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    // { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    // { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    // { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                    // Remote control your reveal.js presentation using a touch device
+                    { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/emojify/emojify.min.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/emojify/emojify.init.js', async: true, condition: function() { return !!document.body.classList; } },
+                ]
+            });
+
+        </script>
+
+    </body>
 </html>
